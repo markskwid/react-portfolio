@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Song Recommendation",
+    "description": "This is a music recommendation web app where users can search for songs, post their own recommendations, and like tracks shared by others. It connects with Spotify to provide accurate song data and playback previews. The platform encourages music discovery through a community-driven feed of song suggestions.",
+    "thumbnail_link": "https://res.cloudinary.com/dvdpkvkj2/image/upload/v1665058091/Group_3_iis39p.png",
+    "tech_stack": [
+      "React",
+      "Tailwind",
+      "Node.js",
+      "Express.js",
+      "Firebase",
+      "Spotify API"
+    ],
+    "project_url": "#",
+    "source_code": "https://github.com"
+  },
+  {
+    "title": "React CRUD + Redux",
+    "description": "This project is a fully functional CRUD application with user authentication, allowing users to sign up, log in, and manage data seamlessly. It was built as part of an assessment to demonstrate proficiency in creating responsive and secure web applications.",
+    "thumbnail_link": "https://res.cloudinary.com/dvdpkvkj2/image/upload/v1740493388/Screenshot_2025-02-25_222249_mjh7jt.png",
+    "tech_stack": ["React", "Redux", "Tailwind", "Firebase"],
+    "project_url": "https://markskwid.github.io/crud-react-firebase/",
+    "source_code": "https://github.com/markskwid/crud-react-firebase"
+  },
+  {
+    "title": "Angular CRUD + NgRx",
+    "description": "This project demonstrates a streamlined Angular application featuring full Create, Read, Update, and Delete functionality through a clean, modular frontend architecture. It was designed to showcase how to interact efficiently with a backend API via structured services and components",
+    "thumbnail_link": "https://res.cloudinary.com/dvdpkvkj2/image/upload/v1740493388/Screenshot_2025-02-25_222249_mjh7jt.png",
+    "tech_stack": ["Angular", "NgRx", "Tailwind"],
+    "project_url": "",
+    "source_code": "https://github.com/markskwid/crud-angular"
+  },
+  {
+    "title": "Accreditation File Repository",
+    "description": "This is a role-based file repository system built with the MERN stack, designed for structured file management and access control. The platform supports three user levels: Admins who have full control over user and file data, Faculty who can manage files within their assigned areas, and Accreditors who have view-only access. It streamlines secure document organization and sharing across different roles.",
+    "thumbnail_link": "https://res.cloudinary.com/dvdpkvkj2/image/upload/v1663766190/Group_3_y5udeo.png",
+    "tech_stack": [
+      "React",
+      "Bootstrap",
+      "CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB"
+    ],
+    "project_url": "",
+    "source_code": "https://github.com/markskwid/online-filerepo-mern"
+  },
+  {
+    "title": "Java Ticketing System",
+    "description": "This desktop-based ticketing system allows users to select travel destinations, automatically compute ticket prices, and manage their transactions. It also features an admin interface with login authentication, enabling full CRUD operations on user transactions for streamlined data management.",
+    "thumbnail_link": "https://res.cloudinary.com/dvdpkvkj2/image/upload/v1663849182/Group_3_d3ppey.png",
+    "tech_stack": ["Java", "Java Swing", "SQL", "JBDC"],
+    "project_url": "",
+    "source_code": "https://github.com/markskwid/javaswing_ticketingsystem/"
+  }
+]

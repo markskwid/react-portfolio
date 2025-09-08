@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+:root {
+  font-family: Inter, sans-serif;
+  font-feature-settings: "liga" 1, "calt" 1, 'cv11':1 ;
+}
+
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: Inter, sans-serif;
+  }
+}
+
+html {
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  font-family: var(--font-family);
+}
+
+
+@theme {
+  --screen-desktop: 1440px;
+  --color-body-900: #0e172b;
+  --color-muted-900: #93A2B8;
+  --color-jade-900: rgb(94, 234, 212);
+  --text-sm: 16px;
+}
+
+html {
+  @apply m-0 p-0;
+}
+
+body {
+  @apply bg-body-900 text-sm p-0 m-0;
+}
+
+.parent-container {
+  @apply max-w-screen-xl px-8 py-10 lg:py-0 lg:px-12 lg:gap-4 mx-auto bg-transparent;
+}
+
+.container{
+  @apply py-32 px-0 lg:w-[48%];
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply text-white leading-7;
+}
+
+.text-muted{
+  @apply text-muted-900;
+}
+
+.text-muted > span {
+  @apply text-white;
+}

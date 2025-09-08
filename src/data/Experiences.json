@@ -1,0 +1,89 @@
+[
+  {
+    "company": "Always Open Commerce",
+    "company_website": "https://alwaysopencommerce.com",
+    "job_position": "Junior Web Developer",
+    "job_description": "I developed and maintained eCommerce stores using BigCommerce and Shopify, aligning with client requirements and ensuring modern, optimized storefronts through theme migrations and updates. To enhance site functionality, I implemented custom scripts and resolved technical issues while applying SEO best practices. I also managed the company’s WordPress website by adding new pages and integrating additional features.",
+    "start_date": "2024",
+    "end_date": "Present",
+    "tech_stack": [
+      "HTML/CSS",
+      "SCSS",
+      "Javascript",
+      "JQuery",
+      "GraphQL",
+      "BigCommerce",
+      "Shopify",
+      "WooCommerce",
+      "WordPress"
+    ],
+    "projects": [
+      {
+        "name": "Clash Graphics",
+        "url": "https://clashgraphics.com"
+      },
+      {
+        "name": "CSM Performance",
+        "url": "https://csmperformance.com"
+      },
+      {
+        "name": "Decor Direct Interiors",
+        "url": "https://decordirectinteriors.com"
+      },
+      {
+        "name": "Ingeneius",
+        "url": "https://ingenieus.net"
+      }
+    ]
+  },
+  {
+    "company": "Accenture",
+    "company_website": "https://www.accenture.com/ph-en",
+    "job_position": "Associate Software Engineer",
+    "job_description": "Completed an intensive front-end development training program with a focus on React.js and Angular.js frameworks. Demonstrated proficiency through successful completion of technical assessments and active participation in Agile Scrum ceremonies. Gained hands-on experience developing responsive, modern user interfaces aligned with current industry standards.",
+    "start_date": "Oct 2023",
+    "end_date": "2024",
+    "tech_stack": [
+      "HTML/CSS",
+      "Tailwind",
+      "Javascript",
+      "Angular",
+      "React",
+      "Redux.js",
+      "NgRx"
+    ],
+    "projects": [
+      {
+        "name": "React CRUD",
+        "url": "https://clashgraphics.com"
+      },
+      {
+        "name": "Angular CRUD",
+        "url": "https://csmperformance.com"
+      }
+    ]
+  },
+  {
+    "company": "ATLP (Accenture)",
+    "company_website": "https://www.accenture.com/ph-en",
+    "job_position": "Participant",
+    "job_description": "Participated in the Accenture Technology Learning Program (ATLP), a structured training initiative focused on web development using HTML, CSS, JavaScript, React, Git, and responsive design. Strengthened practical skills through guided projects and assessments. Built a full-stack file repository using React, Node.js, and MongoDB.",
+    "start_date": "Jan",
+    "end_date": "Mar 2022",
+    "tech_stack": [
+      "HTML/CSS",
+      "Tailwind",
+      "Javascript",
+      "Angular",
+      "React",
+      "Redux.js",
+      "NgRx"
+    ],
+    "projects": [
+      {
+        "name": "MERN Stack File Repository",
+        "url": "https://clashgraphics.com"
+      }
+    ]
+  }
+]
