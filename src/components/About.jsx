@@ -12,11 +12,34 @@ const About = forwardRef((props, ref) => {
 
       <p className="mt-4 text-muted">
         Right now, I’m focused on front-end development in the{" "}
-        <span>Shopify </span>and <span>BigCommerce</span> space, helping brands
-        bring their ideas to life through clean code and solid design. I enjoy
-        the little details — the kind that make a UI feel polished and intuitive
-        — and I’m always learning something new to level up my work. needs, all
-        while keeping performance and maintainability top of mind.
+        <a
+          href="https://www.shopify.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Shopify
+        </a>
+        ,{" "}
+        <a
+          href="https://wordpress.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Wordpress
+        </a>
+        , and{" "}
+        <a
+          href="https://www.bigcommerce.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          BigCommerce
+        </a>{" "}
+        space, helping brands bring their ideas to life through clean code and
+        solid design. I enjoy the little details — the kind that make a UI feel
+        polished and intuitive — and I’m always learning something new to level
+        up my work. needs, all while keeping performance and maintainability top
+        of mind.
       </p>
 
       <p className="mt-4 text-muted">

@@ -55,6 +55,7 @@ h6 {
   @apply text-muted-900;
 }
 
-.text-muted > span {
+.text-muted > a, 
+.text-muted > span{
   @apply text-white;
 }

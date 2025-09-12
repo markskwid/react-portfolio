@@ -67,7 +67,7 @@ export default function ListItem({
           {(source_code || (projects && projects.length > 0)) && (
             <ul
               aria-label="Projects"
-              className="flex justify-start items-start flex-wrap space-x-2 mt-3"
+              className="flex relative z-50 justify-start items-start flex-wrap space-x-2 mt-3"
             >
               {source_code && (
                 <li className="py-1">
@@ -118,7 +118,12 @@ export default function ListItem({
         </div>
       </div>
 
-      <span className="inline-block opacity-0 transition-all group-hover:opacity-10 bg-slate-400/50 absolute w-[calc(100%+4rem)] rounded-md h-full -inset-x-5 inset-y-1 -z-1 shadow-[inset_0px_2px_0_rgba(255,255,255,0.5)]"></span>
+      <a
+        href={companyLink || project_url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block opacity-0 transition-all group-hover:opacity-10 bg-slate-400/50 absolute w-[calc(100%+4rem)] rounded-md h-full -inset-x-5 inset-y-1 z-10 shadow-[inset_0px_2px_0_rgba(255,255,255,0.5)]"
+      ></a>
     </li>
   );
 }

@@ -1,7 +1,31 @@
+import { useEffect } from "react";
 import { BiLogoGmail } from "react-icons/bi";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 
-export default function Header({ activeSection }) {
+export default function Header({ activeSection, refs }) {
+  const scrollIntoFunction = (e, section) => {
+    e.preventDefault();
+    let sectionNumber = 0;
+    switch (section) {
+      case "about":
+        sectionNumber = 0;
+        break;
+      case "experience":
+        sectionNumber = 1;
+        break;
+      case "projects":
+        sectionNumber = 2;
+        break;
+      default:
+        sectionNumber = 0;
+    }
+
+    refs.current[sectionNumber].scrollIntoView({
+      block: "start",
+      behavior: "smooth",
+    });
+  };
+
   return (
     <header className="lg:sticky lg:top-0 lg:flex lg:flex-col lg:justify-between lg:max-h-screen lg:h-screen lg:py-24 mb-10 lg:mb-0">
       <div>
@@ -19,7 +43,10 @@ export default function Header({ activeSection }) {
           className="nav-header mt-12"
         >
           <ul className="[&_li>a]:text-muted-900 [&_li.is-active>a]:text-white [&_li]:flex [&_li]:items-center [&_li::before]:mr-3 [&_li::before]:content-[''] [&_li::before]:h-[0.5px] [&_li.is-active::before]:bg-white [&_li::before]:bg-muted-900 [&_li.is-active::before]:w-15 [&_li.is-active::before]:transition-all [&_li.is-active::before]:duration-300 [&_li::before]:w-10">
-            <li className={`mt-5 ${activeSection === "about" && "is-active"}`}>
+            <li
+              onClick={(e) => scrollIntoFunction(e, "about")}
+              className={`mt-5 ${activeSection === "about" && "is-active"}`}
+            >
               <a
                 href="#"
                 className="tracking-wide uppercase text-xs font-bold"
@@ -29,6 +56,7 @@ export default function Header({ activeSection }) {
               </a>
             </li>
             <li
+              onClick={(e) => scrollIntoFunction(e, "experience")}
               className={`mt-5 ${
                 activeSection === "experience" && "is-active"
               }`}
@@ -42,6 +70,7 @@ export default function Header({ activeSection }) {
               </a>
             </li>
             <li
+              onClick={(e) => scrollIntoFunction(e, "projects")}
               className={`mt-5 ${activeSection === "projects" && "is-active"}`}
             >
               <a
@@ -72,7 +101,7 @@ export default function Header({ activeSection }) {
 
           <li className="inline-block group">
             <a
-              href="www.linkedin.com/in/mark-ponce-bascal-24018a245"
+              href="https://www.linkedin.com/in/mark-ponce-bascal-24018a245"
               className="text-3xl"
               aria-label="LinkedIn Profile"
               rel="noopener noreferrer"
