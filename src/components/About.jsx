@@ -1,6 +1,7 @@
-export default function About() {
+import { forwardRef } from "react";
+const About = forwardRef((props, ref) => {
   return (
-    <div className="lg:mb-42">
+    <section className="lg:mb-42" ref={ref} data-section="about">
       <p className="text-muted">
         Hey there! I’m Mark — a web developer who loves building interfaces that
         not only look good but feel right. I’m all about creating user
@@ -30,6 +31,8 @@ export default function About() {
         late-night gaming sessions. I also dream of someday building something
         that gives back — especially to animals who need a voice.
       </p>
-    </div>
+    </section>
   );
-}
+});
+
+export default About;

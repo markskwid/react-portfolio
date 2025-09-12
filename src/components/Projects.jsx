@@ -1,10 +1,11 @@
+import { forwardRef } from "react";
 import { GoArrowRight } from "react-icons/go";
 import ListItem from "./ListItem";
 import projectData from "../data/Projects.json";
 
-export default function Projects() {
+const Projects = forwardRef((props, ref) => {
   return (
-    <section className="mb-10 mt-50">
+    <section className="mb-10 mt-50" ref={ref} data-section="projects">
       {projectData && projectData.length > 0 ? (
         <ol>
           {projectData.map((project) => (
@@ -22,7 +23,9 @@ export default function Projects() {
         <p>No project posted.</p>
       )}
       <a
-        href="#"
+        href="https://github.com/markskwid?tab=repositories"
+        target="_blank"
+        rel="noopener noreferrer"
         aria-label="View all my projects"
         className="group w-full block text-muted mt-10 font-bold"
       >
@@ -33,4 +36,6 @@ export default function Projects() {
       </a>
     </section>
   );
-}
+});
+
+export default Projects;

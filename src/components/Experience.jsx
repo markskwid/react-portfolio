@@ -1,10 +1,11 @@
+import { forwardRef } from "react";
 import { GoArrowUpRight } from "react-icons/go";
 import ListItem from "./ListItem";
 import experienceData from "../data/Experiences.json";
 
-export default function Experience() {
+const Experience = forwardRef((props, ref) => {
   return (
-    <section className="mb-10">
+    <section className="mb-10" ref={ref} data-section="experience">
       {experienceData && experienceData.length > 0 ? (
         <>
           <ol>
@@ -31,7 +32,9 @@ export default function Experience() {
         </>
       )}
       <a
-        href="#"
+        href={`https://drive.google.com/file/d/1KhHszgBj0HswxLMJM0xBqNAYIpAgzm8j/view?usp=sharing`}
+        target="_blank"
+        rel="noopener noreferrer"
         className="group w-full block text-muted mt-10 font-bold"
         aria-label="View Resume"
       >
@@ -42,4 +45,6 @@ export default function Experience() {
       </a>
     </section>
   );
-}
+});
+
+export default Experience;
