@@ -55,11 +55,11 @@
     "projects": [
       {
         "name": "React CRUD",
-        "url": "https://clashgraphics.com"
+        "url": "https://github.com/markskwid/crud-react"
       },
       {
         "name": "Angular CRUD",
-        "url": "https://csmperformance.com"
+        "url": "https://github.com/markskwid/crud-angular-assessment"
       }
     ]
   },
@@ -82,7 +82,7 @@
     "projects": [
       {
         "name": "MERN Stack File Repository",
-        "url": "https://clashgraphics.com"
+        "url": "https://github.com/markskwid/online-filerepo-mern"
       }
     ]
   }
