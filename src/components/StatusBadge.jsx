@@ -1,25 +1,10 @@
-import { useEffect, useState } from "react";
-
 const StatusBadge = ({ status }) => {
-  const [badgeTone, setBadgeTone] = useState("");
-  useEffect(() => {
-    const setTone = () => {
-      let temp = "";
-      switch (status) {
-        case "Ongoing":
-          temp = "bg-green-700";
-          break;
-        case "Draft":
-          temp = "bg-slate-500";
-          break;
-        default:
-          temp = "bg-transparent";
-      }
-      setBadgeTone(temp);
-    };
-
-    setTone();
-  }, []);
+  const badgeTone =
+    status === "Ongoing"
+      ? "bg-green-700"
+      : status === "Draft"
+      ? "bg-slate-500"
+      : "bg-transparent";
 
   return (
     <span
