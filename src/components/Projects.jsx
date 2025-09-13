@@ -11,6 +11,7 @@ const Projects = forwardRef((props, ref) => {
           {projectData.map((project) => (
             <ListItem
               title={project.title}
+              status={project.status}
               description={project.description}
               project_url={project.project_url}
               source_code={project.source_code}

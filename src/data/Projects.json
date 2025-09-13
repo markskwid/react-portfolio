@@ -1,6 +1,7 @@
 [
   {
     "title": "Song Recommendation",
+    "status": "Ongoing",
     "description": "This is a music recommendation web app where users can search for songs, post their own recommendations, and like tracks shared by others. It connects with Spotify to provide accurate song data and playback previews. The platform encourages music discovery through a community-driven feed of song suggestions.",
     "thumbnail_link": "https://res.cloudinary.com/dvdpkvkj2/image/upload/v1665058091/Group_3_iis39p.png",
     "tech_stack": [
@@ -11,7 +12,7 @@
       "Firebase",
       "Spotify API"
     ],
-    "project_url": "#",
+    "project_url": "https://github.com/markskwid/react-node-spotify",
     "source_code": "https://github.com"
   },
   {
@@ -27,7 +28,7 @@
     "description": "This project demonstrates a streamlined Angular application featuring full Create, Read, Update, and Delete functionality through a clean, modular frontend architecture. It was designed to showcase how to interact efficiently with a backend API via structured services and components",
     "thumbnail_link": "https://res.cloudinary.com/dvdpkvkj2/image/upload/v1740493388/Screenshot_2025-02-25_222249_mjh7jt.png",
     "tech_stack": ["Angular", "NgRx", "Tailwind"],
-    "project_url": "",
+    "project_url": "https://github.com/markskwid/crud-angular",
     "source_code": "https://github.com/markskwid/crud-angular"
   },
   {
@@ -42,7 +43,7 @@
       "Express.js",
       "MongoDB"
     ],
-    "project_url": "",
+    "project_url": "https://github.com/markskwid/online-filerepo-mern",
     "source_code": "https://github.com/markskwid/online-filerepo-mern"
   },
   {
@@ -50,7 +51,7 @@
     "description": "This desktop-based ticketing system allows users to select travel destinations, automatically compute ticket prices, and manage their transactions. It also features an admin interface with login authentication, enabling full CRUD operations on user transactions for streamlined data management.",
     "thumbnail_link": "https://res.cloudinary.com/dvdpkvkj2/image/upload/v1663849182/Group_3_d3ppey.png",
     "tech_stack": ["Java", "Java Swing", "SQL", "JBDC"],
-    "project_url": "",
+    "project_url": "https://github.com/markskwid/javaswing_ticketingsystem/",
     "source_code": "https://github.com/markskwid/javaswing_ticketingsystem/"
   }
 ]

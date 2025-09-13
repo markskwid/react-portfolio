@@ -1,5 +1,6 @@
 import { GoArrowUpRight, GoLink } from "react-icons/go";
 import { BsGithub } from "react-icons/bs";
+import StatusBadge from "./StatusBadge";
 export default function ListItem({
   date,
   company,
@@ -12,6 +13,7 @@ export default function ListItem({
   project_url,
   source_code,
   project_thumbnail,
+  status,
   children,
 }) {
   return (
@@ -45,6 +47,7 @@ export default function ListItem({
                   {company && <span className="text-xs mx-1">•</span>}
                   <span className="inline-block">
                     {company}
+                    {status && <StatusBadge status={status} />}
                     <GoArrowUpRight className="transition-all group-hover:-translate-y-1 group-hover:translate-x-1 w-auto inline ml-1" />
                   </span>
                 </span>
