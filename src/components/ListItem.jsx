@@ -125,7 +125,7 @@ export default function ListItem({
         href={companyLink || project_url}
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-block opacity-0 transition-all group-hover:opacity-10 bg-slate-400/50 absolute w-[calc(100%+4rem)] rounded-md h-full -inset-x-5 inset-y-1 z-10 shadow-[inset_0px_2px_0_rgba(255,255,255,0.5)]"
+        className="inline-block opacity-0 transition-all group-hover:opacity-10 bg-slate-400/50 absolute lg:w-[calc(100%+4rem)] rounded-md h-full -inset-x-5 inset-y-1 z-10 shadow-[inset_0px_2px_0_rgba(255,255,255,0.5)]"
       ></a>
     </li>
   );
