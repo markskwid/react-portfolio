@@ -1,21 +1,5 @@
 [
   {
-    "title": "Song Recommendation",
-    "status": "Ongoing",
-    "description": "This is a music recommendation web app where users can search for songs, post their own recommendations, and like tracks shared by others. It connects with Spotify to provide accurate song data and playback previews. The platform encourages music discovery through a community-driven feed of song suggestions.",
-    "thumbnail_link": "https://res.cloudinary.com/dvdpkvkj2/image/upload/v1665058091/Group_3_iis39p.png",
-    "tech_stack": [
-      "React",
-      "Tailwind",
-      "Node.js",
-      "Express.js",
-      "Firebase",
-      "Spotify API"
-    ],
-    "project_url": "https://github.com/markskwid/react-node-spotify",
-    "source_code": "https://github.com"
-  },
-  {
     "title": "React CRUD + Redux",
     "description": "This project is a fully functional CRUD application with user authentication, allowing users to sign up, log in, and manage data seamlessly. It was built as part of an assessment to demonstrate proficiency in creating responsive and secure web applications.",
     "thumbnail_link": "https://res.cloudinary.com/dvdpkvkj2/image/upload/v1740493388/Screenshot_2025-02-25_222249_mjh7jt.png",

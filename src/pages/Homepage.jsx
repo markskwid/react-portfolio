@@ -81,7 +81,8 @@ export default function Homepage() {
             developed it using <span>Visual Studio Code</span> and built it
             with&nbsp;
             <span>Vite</span> and <span>Tailwind CSS</span>. If you have any
-            questions, feel free to contact me via email. Happy coding!
+            questions, feel free to contact me via <a href="mailto:bascal.markponce.f.1015@gmail.com">email</a>. Happy
+            coding!
           </p>
         </footer>
       </div>

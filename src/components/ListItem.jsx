@@ -1,6 +1,28 @@
 import { GoArrowUpRight, GoLink } from "react-icons/go";
 import { BsGithub } from "react-icons/bs";
+import { FaShopify } from "react-icons/fa6";
+import { SiBigcommerce } from "react-icons/si";
+import { FaWordpress } from "react-icons/fa";
 import StatusBadge from "./StatusBadge";
+
+const ProjectLink = ({ item }) => {
+  return (
+    <li className="py-1" key={item.name}>
+      <a
+        href={item.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={item.name}
+      >
+        <span className="transition-colors hover:text-jade-900 text-white text-[.85rem] inline-block">
+          <GoLink className="inline-block mr-1" />
+          {item.name}
+        </span>
+      </a>
+    </li>
+  );
+};
+
 export default function ListItem({
   date,
   company,
@@ -87,22 +109,36 @@ export default function ListItem({
                   </a>
                 </li>
               )}
-              {projects &&
-                projects.map((project) => (
-                  <li className="py-1" key={project.name}>
-                    <a
-                      href={project.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label={project.name}
-                    >
-                      <span className="transition-colors hover:text-jade-900 text-white text-[.85rem] inline-block">
-                        <GoLink className="inline-block mr-1" />
-                        {project.name}
-                      </span>
-                    </a>
+              {company === "Always Open Commerce" ? (
+                <>
+                  <li>
+                    <ul className="flex flex-wrap justify-start items-start space-x-2">
+                      {projects
+                        .filter((project) => project.type === "project")
+                        .map((item) => (
+                          <ProjectLink key={item.name} item={item} />
+                        ))}
+                    </ul>
                   </li>
-                ))}
+                  <li className="mt-2">
+                    <h3 className="text-muted font-semibold uppercase text-xs flex justify-start items-center before:content-[''] before:w-10 before:mr-2 before:h-[1.5px] before:bg-gray-500">
+                      Managed Client Websites
+                    </h3>
+                    <ul className="flex flex-wrap justify-start items-start space-x-2">
+                      {projects
+                        .filter((project) => project.type === "maintenance")
+                        .map((item) => (
+                          <ProjectLink key={item.name} item={item} />
+                        ))}
+                    </ul>
+                  </li>
+                </>
+              ) : (
+                projects &&
+                projects.map((project) => (
+                  <ProjectLink key={project.name} item={project} />
+                ))
+              )}
             </ul>
           )}
 

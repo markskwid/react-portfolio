@@ -12,6 +12,7 @@
       "Javascript",
       "JQuery",
       "GraphQL",
+      "Klaviyo",
       "BigCommerce",
       "Shopify",
       "WooCommerce",
@@ -20,19 +21,58 @@
     "projects": [
       {
         "name": "Clash Graphics",
-        "url": "https://clashgraphics.com"
+        "url": "https://clashgraphics.com",
+        "type": "project",
+        "stack": "BigCommerce"
       },
       {
         "name": "CSM Performance",
-        "url": "https://csmperformance.com"
-      },
-      {
-        "name": "Decor Direct Interiors",
-        "url": "https://decordirectinteriors.com"
+        "url": "https://csmperformance.com",
+        "type": "project",
+        "stack": "Shopify"
       },
       {
         "name": "Ingenieus",
-        "url": "https://ingeneius.net"
+        "url": "https://ingeneius.net",
+        "type": "project",
+        "stack": "Wordpress"
+      },
+      {
+        "name": "Decor Direct Interiors",
+        "url": "https://decordirectinteriors.com",
+        "type": "project",
+        "stack": "Shopify"
+      },
+
+      {
+        "name": "Alaska Arms LLC.",
+        "url": "https://alaskaarmsllc.com",
+        "type": "maintenance",
+        "stack": "BigCommerce"
+      },
+      {
+        "name": "Vietri",
+        "url": "https://vietri.com",
+        "type": "maintenance",
+        "stack": "Shopify"
+      },
+      {
+        "name": "Bad Dogs Tools",
+        "url": "https://baddogstools.com",
+        "type": "maintenance",
+        "stack": "BigCommerce"
+      },
+      {
+        "name": "SuperPharmacyPlus",
+        "url": "https://baddogstools.com",
+        "type": "maintenance",
+        "stack": "BigCommerce"
+      },
+      {
+        "name": "Successor Systems",
+        "url": "https://successorsystems.com",
+        "type": "project",
+        "stack": "BigCommerce"
       }
     ]
   },
