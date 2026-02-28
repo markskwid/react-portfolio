@@ -1,7 +1,8 @@
 import { forwardRef } from "react";
 const About = forwardRef((props, ref) => {
   return (
-    <section className="lg:mb-42" ref={ref} data-section="about">
+    <section id="about-me" className="lg:mb-42" ref={ref} data-section="about">
+      <h2 className="sr-only">About Me</h2>
       <p className="text-muted">
         Hey there! I’m Mark — a web developer who loves building interfaces that
         not only look good but feel right. I’m all about creating user

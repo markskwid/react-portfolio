@@ -5,7 +5,16 @@ import experienceData from "../data/Experiences.json";
 
 const Experience = forwardRef((props, ref) => {
   return (
-    <section className="mb-10" ref={ref} data-section="experience">
+    <section
+      id="experiences"
+      className="mb-10"
+      ref={ref}
+      data-section="experience"
+    >
+      <h2 className="sr-only">
+        Professional Experience as a Shopify and Front-End Developer
+      </h2>
+
       {experienceData && experienceData.length > 0 ? (
         <>
           <ol>
@@ -36,7 +45,7 @@ const Experience = forwardRef((props, ref) => {
         target="_blank"
         rel="noopener noreferrer"
         className="group w-full block text-muted mt-10 font-bold"
-        aria-label="View Resume"
+        aria-label="View Mark Ponce Full Resume (PDF)"
       >
         <span className="transition-all group-hover:!text-jade-900 inline-block">
           View Full Resume{" "}

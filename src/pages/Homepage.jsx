@@ -38,7 +38,7 @@ export default function Homepage() {
       },
       {
         root: null,
-        treshold: 0,
+        threshold: 0,
         rootMargin: "-50% 0px -50% 0px",
       }
     );

@@ -5,7 +5,9 @@ import projectData from "../data/Projects.json";
 
 const Projects = forwardRef((props, ref) => {
   return (
-    <section className="mb-10 lg:mt-50" ref={ref} data-section="projects">
+    <section id="projects" className="mb-10 lg:mt-50" ref={ref} data-section="projects">
+      <h2 className="sr-only">Personal Coding Projects</h2>
+
       {projectData && projectData.length > 0 ? (
         <ol>
           {projectData.map((project) => (
