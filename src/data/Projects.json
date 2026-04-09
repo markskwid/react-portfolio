@@ -1,5 +1,14 @@
 [
   {
+    "title": "Shopify Headless",
+    "description": "This project is a headless eCommerce storefront built using Next.js, TypeScript, Tailwind CSS, and the Shopify Storefront API. It features dynamic product listings, individual product pages, and a fully functional cart system powered by GraphQL mutations. The application follows a scalable architecture with a dedicated data layer and server-side actions for secure operations, while using Zod for data validation to ensure type safety and reliability. This project demonstrates proficiency in modern frontend development, headless commerce, and API integration.",
+    "thumbnail_link": "https://res.cloudinary.com/dvdpkvkj2/image/upload/q_auto/f_auto/v1775730848/Screenshot_2026-04-09_183339_ry1l7a.png",
+    "tech_stack": ["NextJS", "Typescript", "Shopify", "Tailwind", "GraphQL", "Zod", "Klaviyo"],
+    "project_url": "https://github.com/markskwid/shopify-headless-next",
+    "source_code": "https://github.com/markskwid/shopify-headless-next",
+    "status": "Ongoing"
+  },
+  {
     "title": "React CRUD + Redux",
     "description": "This project is a fully functional CRUD application with user authentication, allowing users to sign up, log in, and manage data seamlessly. It was built as part of an assessment to demonstrate proficiency in creating responsive and secure web applications.",
     "thumbnail_link": "https://res.cloudinary.com/dvdpkvkj2/image/upload/v1740493388/Screenshot_2025-02-25_222249_mjh7jt.png",

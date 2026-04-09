@@ -1,5 +1,15 @@
 [
   {
+    "company": "Advisor Evolved",
+    "company_website": "https://advisorevolved.com/",
+    "job_position": "Wordpress Developer (Part-time)",
+    "job_description": "I supported the development and maintenance of WordPress websites by implementing structured data (schema markup) to enhance SEO and configuring plugins to ensure proper site functionality. I reviewed and resolved layout and spacing issues to improve UI consistency and user experience, while adjusting page designs using Beaver Builder. Additionally, I ensured responsive behavior across different screen sizes to deliver a seamless experience on all devices.",
+    "start_date": "March 16",
+    "end_date": "Present",
+    "tech_stack": ["HTML/CSS", "CSS", "Wordpress", "SEO"],
+    "projects": []
+  },
+  {
     "company": "Always Open Commerce",
     "company_website": "https://alwaysopencommerce.com",
     "job_position": "Junior Web Developer",
@@ -64,13 +74,19 @@
       },
       {
         "name": "SuperPharmacyPlus",
-        "url": "https://baddogstools.com",
+        "url": "https://superpharmacyplus.au",
         "type": "maintenance",
         "stack": "BigCommerce"
       },
       {
         "name": "Successor Systems",
         "url": "https://successorsystems.com",
+        "type": "project",
+        "stack": "BigCommerce"
+      },
+      {
+        "name": "Fiberglass Door",
+        "url": "https://fiberglassdoor.com",
         "type": "project",
         "stack": "BigCommerce"
       }
