@@ -4,8 +4,8 @@
     "description": "A modern headless eCommerce experience vibe-coded with Codex and built with Next.js and Shopify. Powered by GraphQL, Sanity, Zod, and Klaviyo for commerce, content management, data validation, and newsletter subscriptions. Tailwind CSS, shadcn/ui, Motion.dev, and Embla Carousel deliver a polished and interactive storefront. A showcase of modern frontend architecture, headless commerce, and AI-assisted development.",
     "thumbnail_link": "https://res.cloudinary.com/dvdpkvkj2/image/upload/v1788007916/Screenshot_2026-08-29_205124_jqg9dz.png",
     "tech_stack": [
-      "NextJS",
-      "Typescript",
+      "Next.js",
+      "TypeScript",
       "Shopify",
       "Codex",
       "Tailwind",
@@ -13,7 +13,7 @@
       "Zod",
       "Klaviyo",
       "shadcn/ui",
-      "motion.dev"
+      "Motion"
     ],
     "project_url": "https://github.com/markskwid/headless-shopify-vibe",
     "source_code": "https://github.com/markskwid/headless-shopify-vibe",
@@ -24,8 +24,8 @@
     "description": "This project is a headless eCommerce storefront built using Next.js, TypeScript, Tailwind CSS, and the Shopify Storefront API. It features dynamic product listings, individual product pages, and a fully functional cart system powered by GraphQL mutations. The application follows a scalable architecture with a dedicated data layer and server-side actions for secure operations, while using Zod for data validation to ensure type safety and reliability. This project demonstrates proficiency in modern frontend development, headless commerce, and API integration.",
     "thumbnail_link": "https://res.cloudinary.com/dvdpkvkj2/image/upload/q_auto/f_auto/v1775730848/Screenshot_2026-04-09_183339_ry1l7a.png",
     "tech_stack": [
-      "NextJS",
-      "Typescript",
+      "Next.js",
+      "TypeScript",
       "Shopify",
       "Tailwind",
       "GraphQL",
@@ -48,7 +48,7 @@
   {
     "title": "Angular CRUD + NgRx",
     "description": "This project demonstrates a streamlined Angular application featuring full Create, Read, Update, and Delete functionality through a clean, modular frontend architecture. It was designed to showcase how to interact efficiently with a backend API via structured services and components",
-    "thumbnail_link": "https://res.cloudinary.com/dvdpkvkj2/image/upload/v1740493388/Screenshot_2025-02-25_222249_mjh7jt.png",
+    "thumbnail_link": "",
     "tech_stack": ["Angular", "NgRx", "Tailwind"],
     "project_url": "https://github.com/markskwid/crud-angular",
     "source_code": "https://github.com/markskwid/crud-angular"
@@ -72,7 +72,7 @@
     "title": "Java Ticketing System",
     "description": "This desktop-based ticketing system allows users to select travel destinations, automatically compute ticket prices, and manage their transactions. It also features an admin interface with login authentication, enabling full CRUD operations on user transactions for streamlined data management.",
     "thumbnail_link": "https://res.cloudinary.com/dvdpkvkj2/image/upload/v1663849182/Group_3_d3ppey.png",
-    "tech_stack": ["Java", "Java Swing", "SQL", "JBDC"],
+    "tech_stack": ["Java", "Java Swing", "SQL", "JDBC"],
     "project_url": "https://github.com/markskwid/javaswing_ticketingsystem/",
     "source_code": "https://github.com/markskwid/javaswing_ticketingsystem/"
   }

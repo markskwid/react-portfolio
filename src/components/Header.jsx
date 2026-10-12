@@ -1,40 +1,23 @@
-import { useEffect } from "react";
 import { BiLogoGmail } from "react-icons/bi";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 
-export default function Header({ activeSection, refs }) {
-  const scrollIntoFunction = (e, section) => {
-    e.preventDefault();
-    let sectionNumber = 0;
-    switch (section) {
-      case "about":
-        sectionNumber = 0;
-        break;
-      case "experience":
-        sectionNumber = 1;
-        break;
-      case "projects":
-        sectionNumber = 2;
-        break;
-      default:
-        sectionNumber = 0;
-    }
+const navigationItems = [
+  { label: "About", href: "#about-me", section: "about" },
+  { label: "Experience", href: "#experiences", section: "experience" },
+  { label: "Projects", href: "#projects", section: "projects" },
+];
 
-    refs.current[sectionNumber].scrollIntoView({
-      block: "start",
-      behavior: "smooth",
-    });
-  };
-
+export default function Header({ activeSection }) {
   return (
     <header className="lg:sticky lg:top-0 lg:flex lg:flex-col lg:justify-between lg:max-h-screen lg:h-screen lg:py-24 mb-10 lg:mb-0">
       <div>
         <h1 className="text-5xl font-bold">Mark Ponce</h1>
         <h2 className="text-xl capitalize font-normal mt-4">
-          Front end developer
+          Front-end Developer
         </h2>
         <p className="mt-5 text-sm text-muted max-w-sm">
-          I build E-commerce website like BigCommerce, Shopify, and WooCommerce
+          I build eCommerce storefronts with Shopify, BigCommerce, and
+          WooCommerce.
         </p>
 
         <nav
@@ -43,44 +26,24 @@ export default function Header({ activeSection, refs }) {
           className="nav-header mt-12"
         >
           <ul className="[&_li>a]:text-muted-900 [&_li.is-active>a]:text-white [&_li]:flex [&_li]:items-center [&_li::before]:mr-3 [&_li::before]:content-[''] [&_li::before]:h-[0.5px] [&_li.is-active::before]:bg-white [&_li::before]:bg-muted-900 [&_li.is-active::before]:w-15 [&_li.is-active::before]:transition-all [&_li.is-active::before]:duration-300 [&_li::before]:w-10">
-            <li
-              onClick={(e) => scrollIntoFunction(e, "about")}
-              className={`mt-5 ${activeSection === "about" && "is-active"}`}
-            >
-              <a
-                href="#"
-                className="tracking-wide uppercase text-xs font-bold"
-                aria-current="page"
-              >
-                About
-              </a>
-            </li>
-            <li
-              onClick={(e) => scrollIntoFunction(e, "experience")}
-              className={`mt-5 ${
-                activeSection === "experience" && "is-active"
-              }`}
-            >
-              <a
-                href=""
-                className="tracking-wide uppercase text-xs font-bold"
-                aria-current="page"
-              >
-                Experience
-              </a>
-            </li>
-            <li
-              onClick={(e) => scrollIntoFunction(e, "projects")}
-              className={`mt-5 ${activeSection === "projects" && "is-active"}`}
-            >
-              <a
-                href=""
-                className="tracking-wide uppercase text-xs font-bold"
-                aria-current="page"
-              >
-                Projects
-              </a>
-            </li>
+            {navigationItems.map((item) => {
+              const isActive = activeSection === item.section;
+
+              return (
+                <li
+                  key={item.section}
+                  className={`mt-5 ${isActive ? "is-active" : ""}`}
+                >
+                  <a
+                    href={item.href}
+                    className="tracking-wide uppercase text-xs font-bold focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-jade-900"
+                    aria-current={isActive ? "location" : undefined}
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              );
+            })}
           </ul>
         </nav>
       </div>
@@ -104,6 +67,7 @@ export default function Header({ activeSection, refs }) {
               href="https://www.linkedin.com/in/mark-ponce-bascal-24018a245"
               className="text-3xl"
               aria-label="LinkedIn Profile"
+              target="_blank"
               rel="noopener noreferrer"
             >
               <BsLinkedin className="inline-block group-hover:text-white transition-colors" />

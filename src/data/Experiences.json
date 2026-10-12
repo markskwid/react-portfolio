@@ -2,25 +2,25 @@
   {
     "company": "Advisor Evolved",
     "company_website": "https://advisorevolved.com/",
-    "job_position": "Wordpress Developer (Part-time)",
+    "job_position": "WordPress Developer (Part-time)",
     "job_description": "I supported the development and maintenance of WordPress websites by implementing structured data (schema markup) to enhance SEO and configuring plugins to ensure proper site functionality. I reviewed and resolved layout and spacing issues to improve UI consistency and user experience, while adjusting page designs using Beaver Builder. Additionally, I ensured responsive behavior across different screen sizes to deliver a seamless experience on all devices.",
-    "start_date": "March 16",
-    "end_date": "Present",
-    "tech_stack": ["HTML/CSS", "CSS", "Wordpress", "SEO"],
+    "start_date": "Mar",
+    "end_date": "Jul 2026",
+    "tech_stack": ["HTML/CSS", "WordPress", "SEO"],
     "projects": []
   },
   {
     "company": "Always Open Commerce",
     "company_website": "https://alwaysopencommerce.com",
-    "job_position": "Junior Web Developer",
-    "job_description": "I developed and maintained eCommerce stores using BigCommerce and Shopify, aligning with client requirements and ensuring modern, optimized storefronts through theme migrations and updates. To enhance site functionality, I implemented custom scripts and resolved technical issues while applying SEO best practices. I also managed the company’s WordPress website by adding new pages and integrating additional features.",
+    "job_position": "Web Developer",
+    "job_description": "Promoted from Junior Web Developer to Web Developer in 2026. I developed and maintained eCommerce stores using BigCommerce and Shopify, aligning with client requirements and ensuring modern, optimized storefronts through theme migrations and updates. To enhance site functionality, I implemented custom scripts and resolved technical issues while applying SEO best practices. I also managed the company’s WordPress website by adding new pages and integrating additional features.",
     "start_date": "2024",
     "end_date": "Present",
     "tech_stack": [
       "HTML/CSS",
       "SCSS",
-      "Javascript",
-      "JQuery",
+      "JavaScript",
+      "jQuery",
       "GraphQL",
       "Klaviyo",
       "BigCommerce",
@@ -45,7 +45,7 @@
         "name": "Ingenieus",
         "url": "https://ingeneius.net",
         "type": "project",
-        "stack": "Wordpress"
+        "stack": "WordPress"
       },
       {
         "name": "Decor Direct Interiors",
@@ -108,7 +108,7 @@
     "tech_stack": [
       "HTML/CSS",
       "Tailwind",
-      "Javascript",
+      "JavaScript",
       "Angular",
       "React",
       "Redux.js",
@@ -130,12 +130,12 @@
     "company_website": "https://www.accenture.com/ph-en",
     "job_position": "Participant",
     "job_description": "Participated in the Accenture Technology Learning Program (ATLP), a structured training initiative focused on web development using HTML, CSS, JavaScript, React, Git, and responsive design. Strengthened practical skills through guided projects and assessments. Built a full-stack file repository using React, Node.js, and MongoDB.",
-    "start_date": "Jan",
+    "start_date": "Jan 2022",
     "end_date": "Mar 2022",
     "tech_stack": [
       "HTML/CSS",
       "Tailwind",
-      "Javascript",
+      "JavaScript",
       "Angular",
       "React",
       "Redux.js",

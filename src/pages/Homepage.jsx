@@ -3,27 +3,47 @@ import About from "../components/About";
 import Experience from "../components/Experience";
 import Header from "../components/Header";
 import Projects from "../components/Projects";
-import { root } from "postcss";
+
 export default function Homepage() {
   const refs = useRef([]);
-  const [cursorPosition, setCursorPosition] = useState({
-    x: 0,
-    y: 0,
-  });
+  const spotlightRef = useRef(null);
   const [activeSection, setActiveSection] = useState("");
 
-  //use effect for cursor position
   useEffect(() => {
+    const spotlight = spotlightRef.current;
+    const hasFinePointer = window.matchMedia("(pointer: fine)").matches;
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches;
+
+    if (!spotlight || !hasFinePointer || prefersReducedMotion) return;
+
+    let animationFrame = null;
+    let pointerX = 0;
+    let pointerY = 0;
+
     const handleMove = (e) => {
-      setCursorPosition({
-        x: e.clientX,
-        y: e.clientY,
+      pointerX = e.clientX;
+      pointerY = e.clientY;
+
+      if (animationFrame !== null) return;
+
+      animationFrame = window.requestAnimationFrame(() => {
+        spotlight.style.transform = `translate3d(${pointerX - 300}px, ${
+          pointerY - 300
+        }px, 0)`;
+        spotlight.style.opacity = "1";
+        animationFrame = null;
       });
     };
+    
+    window.addEventListener("pointermove", handleMove, { passive: true });
 
-    window.addEventListener("mousemove", handleMove);
     return () => {
-      window.removeEventListener("mousemove", handleMove);
+      window.removeEventListener("pointermove", handleMove);
+      if (animationFrame !== null) {
+        window.cancelAnimationFrame(animationFrame);
+      }
     };
   }, []);
 
@@ -32,7 +52,10 @@ export default function Homepage() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setActiveSection(entry.target.dataset.section);
+            const nextSection = entry.target.dataset.section;
+            setActiveSection((currentSection) =>
+              currentSection === nextSection ? currentSection : nextSection
+            );
           }
         });
       },
@@ -43,34 +66,39 @@ export default function Homepage() {
       }
     );
 
-    refs.current.forEach((element) => {
+    const sections = refs.current.filter(Boolean);
+    sections.forEach((element) => {
       observer.observe(element);
     });
 
     return () => observer.disconnect();
-  }, [activeSection]);
+  }, []);
 
   return (
-    <div className="parent-container min-h-screen w-screen flex flex-col lg:flex-row relative">
+    <div className="parent-container min-h-screen w-full flex flex-col lg:flex-row relative">
       <div
+        ref={spotlightRef}
+        aria-hidden="true"
         style={{
           borderRadius: "100%",
           background: `radial-gradient(600px at 300px 300px, rgba(29, 78, 216, 0.15), transparent 50%)`,
           position: "fixed",
-          left: cursorPosition.x - 300,
-          top: cursorPosition.y - 300,
+          left: 0,
+          top: 0,
           zIndex: "9999",
           width: "600px",
           height: "600px",
           pointerEvents: "none",
+          opacity: 0,
+          willChange: "transform",
         }}
       ></div>
       {/* <!-- right left sticky --> */}
       <div className="w-full lg:w-1/2">
-        <Header activeSection={activeSection} refs={refs} />
+        <Header activeSection={activeSection} />
       </div>
 
-      <div className="w-full lg:w-1/2 lg:py-24">
+      <main className="w-full lg:w-1/2 lg:py-24">
         <About ref={(el) => (refs.current[0] = el)} />
         <Experience ref={(el) => (refs.current[1] = el)} />
         <Projects ref={(el) => (refs.current[2] = el)} />
@@ -85,7 +113,7 @@ export default function Homepage() {
             coding!
           </p>
         </footer>
-      </div>
+      </main>
     </div>
   );
 }

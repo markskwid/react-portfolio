@@ -13,7 +13,14 @@
 
 html {
   font-feature-settings: "cv02", "cv03", "cv04", "cv11";
-  font-family: var(--font-family);
+  font-family: Inter, sans-serif;
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 

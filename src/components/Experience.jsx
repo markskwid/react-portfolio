@@ -1,6 +1,6 @@
 import { forwardRef } from "react";
 import { GoArrowUpRight } from "react-icons/go";
-import ListItem from "./ListItem";
+import ExperienceCard from "./ExperienceCard";
 import experienceData from "../data/Experiences.json";
 
 const Experience = forwardRef((props, ref) => {
@@ -19,18 +19,9 @@ const Experience = forwardRef((props, ref) => {
         <>
           <ol>
             {experienceData.map((experience) => (
-              <ListItem
-                company={experience.company}
-                companyLink={experience.company_website}
-                date={
-                  <>
-                    {experience.start_date} &mdash; {experience.end_date}
-                  </>
-                }
-                jobPosition={experience.job_position}
-                description={experience.job_description}
-                techStack={experience.tech_stack}
-                projects={experience.projects}
+              <ExperienceCard
+                key={`${experience.company}-${experience.job_position}-${experience.start_date}`}
+                experience={experience}
               />
             ))}
           </ol>

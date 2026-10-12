@@ -1,6 +1,6 @@
 import { forwardRef } from "react";
 import { GoArrowRight } from "react-icons/go";
-import ListItem from "./ListItem";
+import ProjectCard from "./ProjectCard";
 import projectData from "../data/Projects.json";
 
 const Projects = forwardRef((props, ref) => {
@@ -11,15 +11,7 @@ const Projects = forwardRef((props, ref) => {
       {projectData && projectData.length > 0 ? (
         <ol>
           {projectData.map((project) => (
-            <ListItem
-              title={project.title}
-              status={project.status}
-              description={project.description}
-              project_url={project.project_url}
-              source_code={project.source_code}
-              project_thumbnail={project.thumbnail_link}
-              techStack={project.tech_stack}
-            />
+            <ProjectCard key={project.title} project={project} />
           ))}
         </ol>
       ) : (
