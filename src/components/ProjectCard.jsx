@@ -15,7 +15,11 @@ export default function ProjectCard({ project }) {
   } = project;
 
   return (
-    <li className="group transition-all w-full px-0 py-4 relative z-10 mt-10">
+    <li className="group isolate transition-all w-full px-0 py-4 relative z-10 mt-10">
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -inset-x-5 inset-y-1 -z-10 rounded-md bg-slate-400/50 opacity-0 shadow-[inset_0px_2px_0_rgba(255,255,255,0.5)] transition-opacity duration-300 group-hover:opacity-10"
+      />
       <article itemScope itemType="https://schema.org/SoftwareSourceCode">
         <div className="flex flex-col lg:flex-row flex-wrap justify-start items-stretch">
           <div className="flex-grow flex-shrink basis-[25%] mb-2 lg:mb-0">
